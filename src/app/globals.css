@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --bot1: #6c5ce7;
+  --bot2: #00b894;
+  --bot3: #fdcb6e;
+  --bot4: #e17055;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* Custom colors for bots */
+  --color-bot1: var(--bot1);
+  --color-bot2: var(--bot2);
+  --color-bot3: var(--bot3);
+  --color-bot4: var(--bot4);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
