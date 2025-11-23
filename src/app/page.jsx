@@ -365,7 +365,7 @@ export default function TherapistDebate() {
       )}
 
       {/* Main Chat Area */}
-      <div className="flex-1 flex flex-col h-screen md:h-auto overflow-hidden">
+      <div className="flex-1 flex flex-col h-full max-h-screen h-screen md:h-auto overflow-hidden">
         {/* Chat Header */}
         <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 px-6 py-4">
           <div className="flex items-center justify-between">
