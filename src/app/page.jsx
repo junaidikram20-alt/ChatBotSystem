@@ -292,7 +292,7 @@ export default function TherapistDebate() {
 
       {/* Sidebar */}
       <div
-        className={`absolute md:relative z-10 w-full md:w-[400px] h-full bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 overflow-y-auto transform transition-transform duration-300 ease-in-out md:translate-x-0 ${
+        className={`absolute md:relative z-10 w-full md:w-[400px] h-full max-h-screen bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 overflow-y-auto transform transition-transform duration-300 ease-in-out md:translate-x-0 ${
           isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
